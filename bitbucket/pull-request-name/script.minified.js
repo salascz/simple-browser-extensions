@@ -1,0 +1,1 @@
+javascript%3A(function()%20%7B%0A%20%20%2F%2F%20function%20code%0A%7D%20)()%3B
