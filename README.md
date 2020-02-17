@@ -13,4 +13,4 @@
 - Safari
 
 ### Example
-![example](https://github.com/salascz/simple-browser-extensions/blob/master/empty-template/.documentation/images/bookmark-examples.png)
+![](https://github.com/salascz/simple-browser-extensions/blob/master/.documentation/images/bookmark-examples.png?raw=true)
