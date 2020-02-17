@@ -11,3 +11,6 @@
 - Chrome
 - Firefox
 - Safari
+
+### Example
+![example](https://github.com/salascz/simple-browser-extensions/blob/master/empty-template/.documentation/images/bookmark-examples.png)
