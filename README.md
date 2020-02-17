@@ -7,6 +7,7 @@
 ### Usage
 - Create a new bookmark and paste the minified version of the script to the URL field
 
-### Supported browsers (already tested in:)
+### Supported browsers (already tested)
 - Chrome
 - Firefox
+- Safari
