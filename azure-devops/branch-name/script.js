@@ -10,5 +10,7 @@ javascript:(function() {
     return;
   }
   const workItemName = workItemLink.innerText.toLowerCase();
-  branchNameInput.value = 'feature/' + workItemName.replace(/ /ig, "-");;
+  branchNameInput.value = 'feature/' + workItemName.replace(/ /ig, "-");
+  const button = document.querySelector('button[id*="ok"]');
+  button.disabled = false;
 })();
