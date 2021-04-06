@@ -10,7 +10,10 @@ javascript:(function() {
     return;
   }
   const workItemName = workItemLink.innerText.toLowerCase();
-  branchNameInput.value = 'feature/' + workItemName.replace(/ /ig, "-");
+  const workItemNameNormalized = workItemName
+    .replace(/ /ig, "-")
+    .replace(/'/ig, "")
+  branchNameInput.value = 'feature/' + workItemNameNormalized;
   const button = document.querySelector('button[id*="ok"]');
   button.disabled = false;
 })();
