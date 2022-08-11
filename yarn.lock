@@ -2,6 +2,24 @@
 # yarn lockfile v1
 
 
+"@types/glob@^7.2.0":
+  version "7.2.0"
+  resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/@types/glob/-/glob-7.2.0.tgz#bc1b5bf3aa92f25bd5dd39f35c57361bdce5b2eb"
+  integrity sha1-vBtb86qS8lvV3TnzXFc2G9zlsus=
+  dependencies:
+    "@types/minimatch" "*"
+    "@types/node" "*"
+
+"@types/minimatch@*":
+  version "3.0.5"
+  resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/@types/minimatch/-/minimatch-3.0.5.tgz#1001cc5e6a3704b83c236027e77f2f58ea010f40"
+  integrity sha1-EAHMXmo3BLg8I2An538vWOoBD0A=
+
+"@types/node@*":
+  version "18.7.1"
+  resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/@types/node/-/node-18.7.1.tgz#352bee64f93117d867d05f7406642a52685cbca6"
+  integrity sha1-NSvuZPkxF9hn0F90BmQqUmhcvKY=
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -18,6 +36,13 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+glob-promise@^5.0.0:
+  version "5.0.0"
+  resolved "https://pkgs.dev.azure.com/MerckVSO/_packaging/SAD/npm/registry/glob-promise/-/glob-promise-5.0.0.tgz#aee3317ee1c211866d0425e1ac2e9089ded09c28"
+  integrity sha1-ruMxfuHCEYZtBCXhrC6Qid7QnCg=
+  dependencies:
+    "@types/glob" "^7.2.0"
 
 glob@^8.0.3:
   version "8.0.3"

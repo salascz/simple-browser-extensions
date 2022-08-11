@@ -1,1 +1,1 @@
-javascript:(function() %7B%20document.dispatchEvent(new%20CustomEvent(%27LiveReloadShutDown%27))%3B%0A%20%20console.log(%27%25c%20LiveReload%20disabled%27%2C%20%27color%3A%20%23bada55%27)%3B%7D)()%3B
+javascript:%20(function()%20%7B%0A%20%20document.dispatchEvent(new%20CustomEvent(%27LiveReloadShutDown%27))%3B%0A%20%20console.log(%27%25c%20LiveReload%20disabled%27%2C%20%27color%3A%20%23bada55%27)%3B%0A%7D)()%3B
