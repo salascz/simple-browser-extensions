@@ -27,9 +27,9 @@ async function converter() {
 }
 
 converter().then(() => {
-  console.log('Files converted');
+  console.log('\x1b[33m', 'Files converted');
 }).catch(e => {
-  console.log(`Error occurred ${e}`);
+  console.log('\x1b[41m', `Error occurred ${e}`);
 });
 
 
