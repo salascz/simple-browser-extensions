@@ -1,2 +1,45 @@
-# .ignore file
-.idea
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules
+
+# Build generated files
+dist
+lib
+release
+solution
+temp
+
+# Coverage directory used by tools like istanbul
+coverage
+
+.idea/*
+**/.idea/*
+.vscode/*
+**/.vscode/*
+*.user
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env

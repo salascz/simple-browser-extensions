@@ -1,1 +1,0 @@
-javascript:(function() %7B%0D%0Avar oldEnabled %3D document.cookie.indexOf("splnu%3D0") > -1%3B%0D%0Aif (oldEnabled) %7B%0D%0A%09document.cookie %3D "splnu%3D1%3B max-age%3Dsession%3B path%3D%2F"%3B%0D%0A%7D else %7B%0D%0A%09document.cookie %3D "splnu%3D0%3B max-age%3Dsession%3B path%3D%2F"%3B%0D%0A%7D%0D%0Awindow.location.reload()%3B%0D%0A%7D )();

@@ -1,0 +1,27 @@
+{
+  "name": "simple-browser-extensions",
+  "version": "0.1.0",
+  "description": "Useful browser extensions/javascript bookmarks",
+  "scripts": {
+    "generate": "node generator/generator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salascz/simple-browser-extensions.git"
+  },
+  "keywords": [
+    "browser",
+    "extension",
+    "bookmark"
+  ],
+  "author": "salascz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salascz/simple-browser-extensions/issues"
+  },
+  "homepage": "https://github.com/salascz/simple-browser-extensions#readme",
+  "devDependencies": {
+    "glob": "^8.0.3",
+    "glob-promise": "^5.0.0"
+  }
+}
