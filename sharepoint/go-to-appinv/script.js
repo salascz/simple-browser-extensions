@@ -1,14 +1,12 @@
-javascript:(function() {
+javascript: (function() {
   let webUrl = '';
   if (typeof _spPageContextInfo !== 'undefined') {
-    webUrl = _spPageContextInfo.webAbsoluteUrl + '/';
+    webUrl = _spPageContextInfo.webAbsoluteUrl;
   } else {
-    const parts = window.location.href.toLowerCase().split('/');
+    const siteUrl = location.protocol + '//' + location.host + location.pathname;
+    const parts = siteUrl.toLowerCase().split('/');
     const indexOfSites = parts.indexOf("sites");
-
-    for (var i = 0; i <= indexOfSites + 1; i++ ) {
-      webUrl  = parts[i] + "/";
-    }
+    webUrl = parts.slice(0, indexOfSites + 2).join('/');
   }
-  window.location.assign(webUrl + "_layouts/15/appinv.aspx");
+  window.location.assign(webUrl + "/_layouts/15/appinv.aspx");
 })();
