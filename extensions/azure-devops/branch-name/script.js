@@ -1,5 +1,5 @@
 javascript:(function() {
-  const branchNameInput = document.querySelector('input[class*="item-name-input"]');
+  const branchNameInput = document.querySelector('input[id*="branchName"]');
   if (!branchNameInput) {
     alert('Branch name element not found.');
     return;
@@ -11,8 +11,9 @@ javascript:(function() {
   }
   const workItemName = workItemLink.innerText.toLowerCase();
   const workItemNameNormalized = workItemName
+    .replace(/[^a-z0-9 ]+/ig)
     .replace(/ /ig, "-")
-    .replace(/'/ig, "")
+    .replace(/---/ig, "-")
   branchNameInput.value = 'feature/' + workItemNameNormalized;
   const button = document.querySelector('button[id*="create-dialog-confirm"]');
   button.disabled = false;
