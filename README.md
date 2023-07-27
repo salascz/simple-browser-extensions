@@ -7,6 +7,11 @@
 ### Usage
 - Create a new bookmark and paste the minified version of the script to the URL field
 
+### Develop
+
+1. Create or modify 'script.js' file
+2. Run `yarn generate` from package.json
+
 ### Supported browsers (already tested)
 - Chrome
 - Firefox
