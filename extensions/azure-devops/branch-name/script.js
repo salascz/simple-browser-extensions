@@ -1,15 +1,33 @@
 javascript:(function() {
-  const branchNameInput = document.querySelector('input[id*="branchName"]');
+  // common functions
+  function getInputByTitle(title) {
+    const labels = document.getElementsByTagName('label');
+    let label = undefined;
+    for (let i = 0; i < labels.length; i++) {
+      const labelToTest = labels[i];
+      if (labelToTest.innerText === title) {
+        label = labelToTest;
+        break;
+      }
+    }
+    if (!label) {
+      alert('Label with "' + title + '" title not found.');
+      return undefined;
+    }
+    return document.querySelector('input[aria-labelledby="' + label.id +'"]');
+  }
+
+  const branchNameInput = getInputByTitle('Name *');
   if (!branchNameInput) {
     alert('Branch name element not found.');
     return;
   }
-  const workItemLink = document.querySelector('div[class="la-primary-data"] a');
-  if (!workItemLink) {
+  const workItemTitle = document.querySelector('input[aria-label="Title field"]');
+  if (!workItemTitle) {
     alert('Work item link not found.');
     return;
   }
-  const workItemName = workItemLink.innerText.toLowerCase();
+  const workItemName = workItemTitle.value.toLowerCase();
   const workItemNameNormalized = workItemName
     // remove non-alphanumeric
     .replace(/[^a-z0-9 ]+/ig, " ")
